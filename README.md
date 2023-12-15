@@ -14,8 +14,8 @@ Features:
 - Sassy (Audio)
 
 ## First steps
-- Run **wake.exe** to set up file type associations.
-- Launch your environment by opening **.env** files.
-- Edit any JIT file **(.jc, .glsl)** to view real-time results.
+- Run **_wake.exe_** to set up file type associations.
+- Launch your environment by opening **_.env_** files.
+- Edit any JIT file **_(.jc, .glsl)_** to view real-time results.
   
 # Screens
