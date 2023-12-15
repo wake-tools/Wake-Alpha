@@ -9,9 +9,9 @@ Features:
 - Interconnected modular design
 
 ## Using:
--Imgui (Interface)
--Sokol (GFX)
--Sassy (Audio)
+- Imgui (Interface)
+- Sokol (GFX)
+- Sassy (Audio)
 
 ## First steps
 - Run wake.exe to set up file type associations.
