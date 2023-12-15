@@ -8,9 +8,9 @@ Features:
 - Built-in interface
 - Interconnected modular design
 
-## Using:
+## Using
 - Imgui (Interface)
-- Sokol (GFX)
+- Sokol (GFX & Shaders)
 - Sassy (Audio)
 
 ## First steps
@@ -18,3 +18,4 @@ Features:
 - Launch your environment by opening .env files.
 - Edit any JIT file (.jc, .glsl) to view real-time results.
   
+# Screens
