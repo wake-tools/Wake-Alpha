@@ -30,7 +30,7 @@ High performance (Millions of triangles)
 ![Wake Alpha](img/screens/tree.png)
 ![Wake Alpha](img/screens/Animate3D_2.gif)
 
-Multi-contextes
+Multi-context (each is separate modular JIT file)
 ![Wake Alpha](img/screens/modules.png)
 
 Multiple render target
