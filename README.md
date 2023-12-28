@@ -14,7 +14,7 @@ Features:
 - Sassy (Audio)
 
 ## First steps
-- Run **_wake.exe_** to set up file type associations.
+- First, run **_wake.exe_** on time to set up files associations.
 - Launch your environment by opening **_.env_** files ( _demo samples:_ [Wake-Samples-vA](https://github.com/Wake-Tools/Wake-Samples-vA) )
 - Edit any JIT file **_(.jc, .glsl)_** to view real-time results.
   
