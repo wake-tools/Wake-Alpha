@@ -111,7 +111,7 @@ inl void stopDraw_Shape(DrawCtx*_) {//ImU32 ImU32
    ImDrawList_PathFillConvex(_->ctx, IM_COL32(128,128,128,128));
 }
 inl void stopDraw_Lines(DrawCtx*_, ImU32 _col, num _thickness, ImDrawFlags _flags) {
-   ImDrawList_PathStroke(_->ctx, IM_COL32(255,50,50,200), _flags, _thickness);
+   ImDrawList_PathStroke(_->ctx, _col, _flags, _thickness);
 }
 inl void stopDraw_dbg_Lines(DrawCtx*_) {
    ImDrawList_PathStroke(_->ctx, IM_COL32(255,50,50,200), 0, 2.0);
@@ -120,6 +120,17 @@ inl void drawLine(DrawCtx*_, vec3 _pt1, vec3 _pt2 ) {
    moveto_(_,_pt1);
    lineto_(_,_pt2);
    stopDraw_Lines(_,IM_COL32(255,50,50,200), 0, 2.0);
+}
+inl void drawLineC(DrawCtx*_, vec3 _pt1, vec3 _pt2 , ImU32 _col) {
+   moveto_(_,_pt1);
+   lineto_(_,_pt2);
+   stopDraw_Lines(_,_col, 0, 2.0);
+}
+
+inl void drawTriB(DrawCtx*_, vec3 _pt, float dim) {
+   drawLineC(_,(vec3){_pt.x-dim,_pt.y-dim},  (vec3){_pt.x+dim,_pt.y-dim},  IM_COL32(50,50,200,200));
+   drawLineC(_,(vec3){_pt.x+dim,_pt.y-dim},  (vec3){_pt.x,_pt.y+dim},      IM_COL32(50,50,200,200));
+   drawLineC(_,(vec3){_pt.x,_pt.y+dim},      (vec3){_pt.x-dim,_pt.y-dim},  IM_COL32(50,50,200,200));
 }
 
 

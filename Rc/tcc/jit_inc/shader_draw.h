@@ -141,7 +141,7 @@ inl num mul(vec3 pt1, vec3 pt2){
    return pt1.x*pt2.x+pt1.y*pt2.y+pt1.z*pt2.z;
 }
 
-inl vec3 substract(vec3 pt1, vec3 pt2){
+inl vec3 sub(vec3 pt1, vec3 pt2){
    return (vec3){
       .x=pt1.x-pt2.x,
       .y=pt1.y-pt2.y,
@@ -430,7 +430,7 @@ static void draw_quad_m(drawlist_t* _, vec3 p_TL, vec3 p_TR, vec3 p_BL, vec3 p_B
    //   return;
    }
 
-   vec3 ori = cross(substract(a,b), substract(c, b));
+   vec3 ori = cross(sub(a,b), sub(c, b));
    if( ori.z>0 ){
       return;
    }
@@ -505,7 +505,7 @@ static void draw_quad_m2(drawlist_t* _, vec3 p_TL, vec3 p_TR, vec3 p_BL, vec3 p_
 
 
 
-   vec3 ori = cross(substract(a,b), substract(c, b));
+   vec3 ori = cross(sub(a,b), sub(c, b));
    if( ori.z>0 ){
    //   return;
    }
