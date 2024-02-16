@@ -117,6 +117,11 @@ typedef struct jit_t {
    enum jit_event event;
    Nod* nod;
    Nod* action;
+   
+   float* audio_stream;
+   int audio_samples_count;
+   int audio_channels_count;
+
    /*
 	uint16_t v;
 	uint16_t t;

@@ -24,6 +24,7 @@
 enum sg_backend;
 enum sg_backend sg_query_backend(void);
 
+extern vec2 test_func1(float _time);
 
 
 void add_std_func(TCCState* s){
@@ -71,6 +72,8 @@ void add_std_func(TCCState* s){
     //
     tcc_add_symbol(s, "get_module_shader", get_module_shader);
     tcc_add_symbol(s, "get_module_nod", get_module_nod);
+    
+    tcc_add_symbol(s, "test_func1", test_func1);
     ///////////////
 }
 
